@@ -23,3 +23,4 @@ rootProject.name = "Pulica"
 include(":app")
 include(":features:connection")
 include(":features:setting")
+include(":core")

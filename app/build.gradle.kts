@@ -41,6 +41,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
     implementation(project(":features:connection"))
     implementation(project(":features:setting"))
     implementation(libs.androidx.core.ktx)
