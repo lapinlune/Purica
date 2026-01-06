@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Pulica"
 include(":app")
-include(":features:home")
+include(":features:connection")
+include(":features:setting")

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/appHomeFragment">
+
+    <fragment
+        android:id="@+id/appHomeFragment"
+        android:name="com.nywss.pulica.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_appHomeFragment_to_connectionMainFragment"
+            app:destination="@id/connectionMainFragment" />
+        <action
+            android:id="@+id/action_appHomeFragment_to_settingMainFragment"
+            app:destination="@id/settingMainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/connectionMainFragment"
+        android:name="com.pulica.features.connection.presentation.main.ConnectionMainFragment"
+        android:label="ConnectionMainFragment"
+        tools:layout="@layout/fragment_connection_main" />
+
+    <fragment
+        android:id="@+id/settingMainFragment"
+        android:name="com.pulica.features.setting.presentation.main.SettingMainFragment"
+        android:label="SettingMainFragment"
+        tools:layout="@layout/fragment_setting_main" />
+
+</navigation>
